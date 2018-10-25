@@ -49,6 +49,13 @@ rep(c(1,4), times=c(2,6))
 
 Sys.Date()
 
+source('test1.R')
 
 
 
+?wo
+?iris
+
+require(graphics)
+plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
+     main = "women data: American women aged 30-39")men
