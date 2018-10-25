@@ -11,7 +11,8 @@ quantile(x,seq(0,1,.01)) # percentile
 fivenum(x) #five number
 boxplot(x) #boxplot
 abline(h=fivenum(x))
-
+stem(x)
+hist(x)
 plot(density(x))
 abline(v=60,col('red'))
 
