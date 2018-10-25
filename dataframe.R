@@ -24,3 +24,24 @@ df1$course=factor(df1$course)
 str(df1)
 summary(df1)
 # summary(x)
+df1
+df1[ marks > 50 & gender=='F',c(1:4)]
+df1[ marks>50 | gender=='M',c(1:5)]
+
+#max score from each gender
+aggregate(df1$marks,by=list(df1$gender),FUN=max)
+aggregate(marks~ gender,data = df1,FUN = max)
+
+(df2= aggregate(cbind(marks,marks2)~gender+course))
+
+
+df1$gender
+
+# divide the branches and then sort them as per top 3 marks scored in thrie respective department
+
+MBA                    
+3 rows (name,marks)
+BTech
+3 rows (name,marks)
+BBA
+3 rows (name,marks)
